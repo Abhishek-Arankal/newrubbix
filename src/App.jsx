@@ -12,6 +12,7 @@ import ServiceDetail from './Components/Services/SeviceDetails'
 import PrivacyPolicy from './Components/Pages/PrivecyandPolicy'
 import TermsAndConditions from './Components/Pages/TermsandConditions'
 import CookiePolicy from './Components/Pages/CookieandPolicy'
+import BlogPage from './Components/Blog/blog'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ScrollToTop from './Components/Scroll/Scrolltop'
@@ -31,6 +32,7 @@ function App() {
               <About />
               <Service />
               <Products />
+              <BlogPage />
               <Contact />
               <Footer />
             </>
