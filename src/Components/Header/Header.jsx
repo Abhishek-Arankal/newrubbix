@@ -32,9 +32,11 @@ export default function Header(){
                     <ul className="flex space-x-10 text-lg text-black">
                         <NavLink to="/" className={({isActive}) => `hover:font-bold ${isActive ? "text-orange-700" : "text-gray-700"}`}>Home</NavLink>
                         <NavLink to="/about-us" className={({isActive}) => `hover:font-bold ${isActive ? "text-orange-700" : "text-gray-700"}`}>About Us</NavLink>
+                        <NavLink to="/blog" className={({isActive}) => `hover:font-bold ${isActive ? "text-orange-700" : "text-gray-700"}`}>Blog</NavLink>
                         <NavLink to="/service" className={({isActive}) => `hover:font-bold ${isActive ? "text-orange-700" : "text-gray-700"}`}>Services</NavLink>
                         <NavLink to="/contact-us" className={({isActive}) => `hover:font-bold ${isActive ? "text-orange-700" : "text-gray-700"}`}>Contact Us</NavLink>
                         <NavLink to="/our-products" className={({isActive}) => `hover:font-bold ${isActive ? "text-orange-700" : "text-gray-700"}`}>Our Product</NavLink>
+                        
                     </ul>
                 </nav>
                 {/* copy pasted */}

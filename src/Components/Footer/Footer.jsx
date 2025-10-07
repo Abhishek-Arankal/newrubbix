@@ -53,6 +53,9 @@ export default function Footer(){
                             <li>
                                 <Link to="/our-products" className="text-gray-800 hover:text-orange-400 cursor-pointer text-md">Our Products</Link>
                             </li>
+                            <li>
+                                <Link to="/blog" className="text-gray-800 hover:text-orange-400 cursor-pointer text-md">Blog</Link>
+                            </li>
                         </ul>
                         {/* <ul className="flex flex-col justify-center items-start gap-2">
                             <li className="text-gray-800 hover:text-orange-400 cursor-pointer text-md">Home</li>

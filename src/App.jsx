@@ -129,6 +129,18 @@ function App() {
             </>
           }
         />
+        <Route
+          path="/blog"
+          element={
+            <>
+              <section id="services" className="pt-20">
+                  <BlogPage/>
+              </section>
+
+              <Footer />
+            </>
+          }
+        />
       </Routes>
     </>
   )
