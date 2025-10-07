@@ -53,6 +53,7 @@ export default function Header(){
         <div className="md:hidden bg-white  shadow-lg px-6 py-4 space-y-4 w-full top-0 left-0">
           <NavLink to="/" className="block text-gray-700" onClick={() => setIsOpen(false)}>Home</NavLink>
           <NavLink to="/about-us" className="block text-gray-700" onClick={() => setIsOpen(false)}>About Us</NavLink>
+          <NavLink to="/blog" className="block text-gray-700" onClick={() => setIsOpen(false)}>Blog</NavLink>
           <NavLink to="/Service" className="block text-gray-700" onClick={() => setIsOpen(false)}>Services</NavLink>
           <NavLink to="/contact-us" className="block text-gray-700" onClick={() => setIsOpen(false)}>Contact Us</NavLink>
           <NavLink to="/our-products" className="block text-gray-700" onClick={() => setIsOpen(false)}>Our Products</NavLink>
