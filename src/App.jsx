@@ -8,14 +8,18 @@ import Contact from './Components/Contact/Contact'
 
 import './App.css'
 import Header from './Components/Header/Header'
+import ServiceDetail from './Components/Services/SeviceDetails'
+import PrivacyPolicy from './Components/Pages/PrivecyandPolicy'
+import TermsAndConditions from './Components/Pages/TermsandConditions'
+import CookiePolicy from './Components/Pages/CookieandPolicy'
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from './Components/Scroll/Scrolltop'
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
+    <ScrollToTop />
       <Header />
 
       <Routes>
@@ -42,6 +46,19 @@ function App() {
 
               <Footer />
             </>
+          }
+        />
+
+        <Route
+          path="/service/:id"
+          element={
+           <>
+             <section className="pt-20">
+                <ServiceDetail />
+             </section>
+             <Contact />
+             <Footer />
+           </>
           }
         />
         <Route
@@ -77,10 +94,42 @@ function App() {
             </>
           }
         />
+        <Route
+          path="/privacy-policy"
+          element={
+            <>
+            <section id="privacy-policy" className="pt-20">
+               <PrivacyPolicy />
+            </section>
+            <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/terms-conditions"
+          element={
+            <>
+            <section id="privacy-policy" className="pt-20">
+               <TermsAndConditions />
+            </section>
+            <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/cookie-policy"
+          element={
+            <>
+            <section id="privacy-policy" className="pt-20">
+               <CookiePolicy />
+            </section>
+            <Footer />
+            </>
+          }
+        />
       </Routes>
     </>
   )
 }
 
-export default App
-// className="pt-20"
+export default App;

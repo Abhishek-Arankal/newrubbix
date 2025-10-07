@@ -1,17 +1,25 @@
 import React from "react";
 import logo from "../../assets/logo-rubix.png"
-import { Link, NavLink } from "react-router-dom"
+import { Link, NavLink, useNavigate } from "react-router-dom"
 import { Menu, X, Globe, Mail, Search } from "lucide-react";
 import { useState } from "react";
 
 
 export default function Header(){
     const [isOpen, setIsOpen] = useState(false);
+    
+    const navigate = useNavigate();
+
+    const handleLogoClick = () => {
+    navigate("/");          // navigate to home if not already
+    window.scrollTo({ top: 0, behavior: "smooth" }); // scroll to top
+  };
+    
     return(
         <header className="bg-white py-4 lg:px-[80px] px-7 fixed top-0 left-0 w-full z-50">
             <div className="flex justify-between items-center">
                 <div className="text-black font-bold text-left lg:text=4xl text-3xl uppercase">
-                    <img src={logo} alt="logo" className="mr-3 h-[50px]"></img>
+                    <img src={logo} alt="logo" className="mr-3 h-[50px] cursor-pointer" onClick={handleLogoClick}></img>
                 </div>
 
 
@@ -45,7 +53,7 @@ export default function Header(){
           <NavLink to="/about-us" className="block text-gray-700" onClick={() => setIsOpen(false)}>About Us</NavLink>
           <NavLink to="/Service" className="block text-gray-700" onClick={() => setIsOpen(false)}>Services</NavLink>
           <NavLink to="/contact-us" className="block text-gray-700" onClick={() => setIsOpen(false)}>Contact Us</NavLink>
-          <NavLink to="/openings" className="block text-gray-700" onClick={() => setIsOpen(false)}>Openings</NavLink>
+          <NavLink to="/our-products" className="block text-gray-700" onClick={() => setIsOpen(false)}>Our Products</NavLink>
         </div>
       )}
                 

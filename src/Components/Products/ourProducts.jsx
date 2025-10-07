@@ -3,24 +3,28 @@ import bgImg from "../../assets/hero_bg.jpg"
 export default function Products(){
     const projects = [
   {
-    img: "https://images.pexels.com/photos/8939806/pexels-photo-8939806.jpeg",
-    title: 'Cloud Migration for TechCorp',
-    para: 'Developed an AI recommendation engine that delivers personalized shopping experiences.',
+    img: "https://plus.unsplash.com/premium_photo-1661670279824-bff088ecd478?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: 'Telemedicine & Health Consultation App',
+    para: 'Allows patients to schedule virtual appointments, chat with doctors, and manage electronic health records.',
+    url: "https://www.google.com" 
   },
   {
     img: "https://media.istockphoto.com/id/1395697897/photo/shot-of-a-young-mother-helping-her-daughter-with-homework-at-home.jpg?s=2048x2048&w=is&k=20&c=smWmKzpUk87W-b7F8y_4m9CofVZFvwz6wouT_of8PxA=",
     title: 'Cloud Migration for TechCorp',
     para: 'Developed an interactive e-learning platform that provides students with access to online classes and assigns dedicated mentors for personalized guidance and progress tracking.',
+    url: "https://www.youtube.com/" 
   },
   {
-    img: "https://images.pexels.com/photos/15770387/pexels-photo-15770387.jpeg",
-    title: 'Cloud Migration for TechCorp',
-    para: 'Built an IoT-enabled platform for real-time patient monitoring and predictive healthcare insights.',
+    img: "https://plus.unsplash.com/premium_photo-1739227400196-09fbead2ea8b?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: 'E-Commerce Analytics Dashboard',
+    para: 'A web-based analytics platform for e-commerce businesses to track sales performance, customer behavior, inventory levels, and marketing campaign effectiveness. It features interactive visualizations, predictive insights, and real-time reporting, enabling businesses to make data-driven decisions and optimize growth strategies. make this short',
+    url: "https://www.google.com" 
   },
   {
-    img: "https://images.pexels.com/photos/8939806/pexels-photo-8939806.jpeg",
-    title: 'Cloud Migration for TechCorp',
-    para: 'Augue purus malesuada pulvinar faucibus vel id hac. Sed duis sit vitae platea nulla nunc egestas pellentesque et.',
+    img: "https://plus.unsplash.com/premium_photo-1726079248075-2b50954971fd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: 'AI-Powered Customer Support Chatbot',
+    para: 'An AI-powered chatbot using NLP to provide instant, accurate responses across web, mobile, and social media, automating FAQs and escalating complex queries to human agents for faster customer support.',
+    url: "https://www.google.com" 
   },
 ]
     return(
@@ -36,7 +40,7 @@ export default function Products(){
                         <div className="w-full bg-gray-600 p-8 flex flex-col justify-center items-start gap-4">
                             <h1 className="text-white lg:text-[25px] text-[22px] capitalize leading-[1.2em] text-left">{project.title}</h1>
                             <h1 className="text-gray-300 text-sm text-left">{project.para}</h1>
-                            <button className="text-black hover:text-purple-500 text-sm font-semibold mt-5">View Product</button>
+                            <button onClick={() => window.open(project.url, "_blank")} className="text-black hover:text-purple-500 text-sm font-semibold mt-5">View Product</button>
 
                         </div>
 
